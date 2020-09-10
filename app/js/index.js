@@ -4,6 +4,8 @@
       newsFeed     = require("./common/NewsFeed/NewsFeed"),
       qAppVersion  = document.querySelector("#app-version");
 
+  utils.setLiveReload(true)
+  
   // Get the version number from the manifest file
   qAppVersion.innerHTML = nw.App.manifest.version;
 

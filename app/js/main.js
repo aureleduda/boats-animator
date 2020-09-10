@@ -5,6 +5,7 @@
   const PreviewOverlay = require("./main/PreviewOverlay/PreviewOverlay");
   const Project = require("./main/Project/Project");
   global.AppShortcuts = require("./main/Shortcuts/Shortcuts");
+  const Lumix = require("./main/Lumix/Lumix");  
 
   // UI imports
   const CaptureOptions = require("./ui/CaptureOptions/CaptureOptions");
@@ -33,6 +34,9 @@
 
       // Set default view
       global.projectInst.setCurrentMode("capture");
+
+      //Initialize Lumix
+      global.lumixCamera = new Lumix();
     });
   }
   window.onload = startup;

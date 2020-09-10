@@ -4,6 +4,7 @@
 
   const cameraSelect = document.querySelector("#camera-select-td select");
   const resolutionSelect = document.querySelector("#resolution-select-td select");
+  const mirrorSelect = document.querySelector("#mirror-select-td select");
   const preview = document.querySelector("#preview");
   const previewAreaMessage = document.querySelector("#preview-area-message");
 
@@ -28,6 +29,11 @@
       // Refresh camera list when device changes are detected
       navigator.mediaDevices.addEventListener("devicechange", function(e) {
         Camera.enumerateDevices();
+      });
+
+      //Mirror the image
+      mirrorSelect.addEventListener("change", function() {
+        console.log("mirror");
       });
     }
   }

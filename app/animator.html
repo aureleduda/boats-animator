@@ -138,6 +138,12 @@
             <label>Image resolution:</label>
             <select id="form-resolution-select"></select>
           </li>
+          <!-- Mirror selection -->
+          <li id="mirror-select-td">
+            <label>Image mirror:</label>
+            <select id="form-mirror-select"></select>
+          </li>
+
         </ul>
       </div>
 
@@ -170,6 +176,44 @@
             <i class="fa fa-th fa-fw"></i> Overlays</h2>
         </div>
         <ul id="overlay-list"></ul>
+      </div>
+
+      <!--Lumix Wifi Control-->
+      <div class="sidebar-item" id="overlay-header">
+        <div class="sidebar-header">
+          <h2>
+            <i class="fa fa-th fa-fw"></i> Lumix Control</h2>
+        </div>
+
+        <ul id="lumixcontrol-list">
+          <li id="camera-ip">
+            <label>Camera IP:</label>
+            <input id="camera-ip-input"  type="text"/>
+          </li>
+        </ul>
+        <section id="lumix-controls">
+          <div id="btn-wifi-connect" title="Connect to the camera" class="button">
+            <i class="fa fa-wifi"></i>
+          </div>
+          <div id="btn-focus-wide-fast" title="Focus Wide Fast" class="button">
+            <i class="fa fa-fast-backward"></i>
+          </div>
+          <div id="btn-focus-wide-slow" title="Focus Wide Slow" class="button">
+            <i class="fa fa-step-backward"></i>
+          </div>
+          <div id="btn-sd-shoot" title="Take a picture with camera" class="button">
+            <i class="fa fa-camera-retro"></i>
+          </div>
+          <div id="btn-focus-tele-slow" title="Focus Télé Slow" class="button">
+            <i class="fa fa-step-forward"></i>
+          </div>
+          <div id="btn-focus-tele-fast" title="Focus Télé Fast" class="button">
+            <i class="fa fa-fast-forward"></i>
+          </div>
+          <div id="btn-options" title="Options" class="button">
+            <i class="fa fa-bars"></i>
+          </div>
+        </section>
       </div>
     </aside>
   </main>

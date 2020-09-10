@@ -38,9 +38,13 @@
   },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.18",
+    "ffmpeg": "0.0.4",
     "mkdirp": "^0.5.1",
     "mousetrap": "^1.6.2",
-    "sweetalert": "^2.1.2"
+    "request-then": "^1.1.0",
+    "requests": "^0.3.0",
+    "sweetalert": "^2.1.2",
+    "then-request": "^6.0.2"
   },
   "devDependencies": {
     "nw-dev": "^3.0.1",
